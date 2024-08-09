@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+
+
+    <!-- header section starts---------------------------------------------------------------------------------------------------------------- -->
+
+
+    <header class="header-about"> 
+       <nav>
+        <img src="https://www.pngkey.com/png/full/453-4536090_coffee-cup-icon-png-hot-coffee-vector-png.png" alt="">
+
+        <div class="nav-links" id="change">
+            <i class="fa-solid fa-xmark" onclick="hide()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+      
+    </div>
+    <i class="fa-solid fa-bars" onclick="show()"></i> 
+       </nav>
+    <div class="type-text">
+        <h1>About Us</h1>
+        <h4>Welcome to Our Coffee W! We are a passionate team dedicated to provide best to our customers With a commitment to excellence and innovation, we strive to provide the best products to our valued customers. Join us on our journey to a positive outcome or vision.</h4>
+    </div>
+    </header>
+        <!-- header section endsssssssssssssss------------------------------------------------------------ -->
+
+        <!-- about us section -->
+        <section class = "about-section">
+            <div class="img-left">
+                <img src="https://pngimg.com/uploads/mug_coffee/mug_coffee_PNG16843.png" alt="">
+            </div>
+            <div class="about-text">
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eveniet laborum? Possimus placeat ipsa, omnis veniam optio obcaecati unde corrupti itaque esse? Neque assumenda labore veniam sapiente asperiores ex quaerat? Voluptas aliquid enim quibusdam eaque nam atque magnam esse repellat error adipisci. Suscipit, sapiente nisi! In, sed quia harum illum modi, labore ipsa assumenda saepe iure, quae dignissimos dolorem.</p>
+                <a href="">Explore</a>
+            </div>
+        </section>
+
+             <!-- join us section startssssssssssssssss-------------------------------------------- -->
+     <section class="send-cv">
+        <div class="texttt">
+            <h1 class="nan">Join To Coffee Company Today !</h1>
+            <p class="nan-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus fuga voluptas! Nesciunt architecto perspiciatis labore odit! Vitae, iusto voluptatibus?</p>
+            <button class="nan-b">Send Your CV<i class="fa-solid fa-caret-down" style="margin-left: 30px;"></i></button>
+        </div>
+     </section>
+
+    <script>
+
+        const store = document.getElementById("change")
+
+        function show(){
+            change.style.right = "0";
+        }
+
+        function hide(){
+            change.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

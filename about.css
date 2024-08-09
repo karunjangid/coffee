@@ -1,0 +1,264 @@
+/* header section startssssssssssssssssssssssssssssssssssssssssss----------------------------- */
+
+.header-about{
+    background-image: linear-gradient(1800deg, rgba(1,0,0,0.8094887613248425) 40%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 97%, rgba(0,0,0,0.7310573887758228) 100%),url("https://wallpapercave.com/wp/wp6751471.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+.nav-about-links .ul{
+display: flex;
+list-style: none;
+gap: 30px;
+}
+
+.nav-about-links .ul li{
+    margin-top: 5px;
+}
+
+.nav-about-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+@media(max-width: 700px){
+    .nav-about-links .ul{
+    display: block;
+    background: #38220f;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;     
+    }
+    
+}
+
+
+/* header section endsssssssssssss------------------------------------------------------------ */
+
+/* about           us section               startssssssssss------------------------------------------ */
+.type-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* bottom: 500px; */
+    height: 553px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    color: white;
+}
+.type-text h1::after{
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6%;
+    background-color: red;
+    bottom: 50%;
+    left: 55%;
+}
+.type-text h4{
+    font-family: "Inter", sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-weight: 200;
+  }
+.type-text h1{
+    font-size: 80px;
+}
+
+@media(max-width: 700px){
+    .type-text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 160px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+    }
+    .type-text h1{
+        margin-right: 190px;
+        margin-top: 200px;
+        font-size: 35px;
+    }
+    .type-text h4{
+        position: relative;
+        text-align: center;
+        margin-left: 100px;
+        width: 240px;
+        font-size: 9px;
+        font-weight: 200;
+    }
+    .type-text h1::after{
+        bottom: 0px;
+        left: 38%;
+        height: 2px;
+        width: 7%;
+    }
+    
+}
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-color: #504842;
+
+}
+.about-section .img-left, .about-section .about-text{
+    color: rgb(25, 23, 22);
+}
+.about-section .img-left img{
+    width: 100%;
+}
+.about-section .about-text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+    gap: 50px;
+    flex-direction: column;
+    background-color: white;
+
+}
+.about-section .img-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.about-section .about-text h1{
+    font-size: 70px;
+    color: black;
+    position: relative;
+}
+.about-section .about-text h1::after{
+    position: absolute;
+    content: "";
+    width: 25%;
+    background: red;
+    height: 6px;
+    bottom: -6px;
+    right: 0px;
+}
+.about-section .about-text p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+.about-section .about-text a{
+    background: rgb(132, 54, 9);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 15px 60px;
+    position: relative;
+    font-family: "Crimson Text", serif;
+}
+.about-section .about-text a:hover{
+    background-color: transparent;
+    color: black;
+}
+.about-section .about-text a::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    height: 3.5px;
+    background-color: black;
+    width: 0%;
+}
+.about-section .about-text a:hover::before{
+    left: 0;
+    width: 100%;
+    transition: 0.9s ease-in-out;
+}
+.about-section .about-text a::after{
+    position: absolute;
+    content: "";
+    right: 50%;
+    bottom: 0;
+    height: 3.5px;
+    background-color: black;
+    width: 0%;
+}
+.about-section .about-text a:hover::after{
+    width: 100%;
+    transition: 0.9s ease-in-out;
+    right: 0;
+}
+@media(max-width:700px){
+    .about-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-section .about-text{
+        align-items: center;
+        text-align: center;
+    }
+    .about-section .about-text h1{
+        font-size: 40px;
+    }
+    .about-section .about-text p{
+        font-size: 18px;
+    }
+}
+/* about us section ends=--------------------------------------------------------- */
+
+/* join us section startsssssssssssss------------------------------------------------------------------- */
+.send-cv{
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://pngimg.com/uploads/cup/cup_PNG1968.png");
+    background-repeat: no-repeat;
+}
+.nan{
+    font-size: 60px;
+}
+.nan-p{
+    width: 500px;
+    position: relative;
+    left: 180px;
+    top: 40px;
+}
+.nan-b{
+    padding: 15px 30px;
+    position: relative;
+    top: 70px;
+    cursor: pointer;
+    background-color: rgb(230, 102, 16);
+    border-radius: 6px;border: none;
+}
+@media(max-width:700px){
+    .send-cv{
+        position: relative;
+        top: 450px;
+        background-position: 130% 120%;
+        background-size: 60%;
+    }
+    .nan{
+        font-size: 29px;
+        position: relative;
+        top: -60px;
+    }
+    .nan-p{
+        width: 350px;
+        left:10px;
+        top: -30px;
+        color: rgb(0, 0, 0);
+    }
+    .nan-b{
+        padding: 10px 20px;
+    }
+}
